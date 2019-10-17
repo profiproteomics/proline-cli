@@ -6,9 +6,9 @@ A Command Line Interface to execute Proline data processings
 
 ### How to get the CLI?
 
-Download the latest zip file in the github releases section and unzip it on yoru computer.
+Download the latest zip file in the github releases section and unzip it on your computer.
 
-From a Linux shell this can be done by execting the following commands:
+From a Linux shell this can be done by executing the following commands:
 
 ```
 # Download the zip file
