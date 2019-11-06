@@ -1,0 +1,3 @@
+mzdb_file_path	biological_group
+./extra/example_dataset/OVEMB150205_25.raw.mzDB	50fmol
+./extra/example_dataset/OVEMB150205_27.raw.mzDB	50fmol
