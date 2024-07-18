@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <contextName>Proline-CLI</contextName>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>DEBUG</level>
+    </filter>
+
+    <encoder>
+      <!-- TTCCLayout -->
+      <pattern>%date{dd MMM yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+    </encoder>
+
+  </appender>
+
+  <appender name="Fappender" class="ch.qos.logback.core.FileAppender">
+    <file>proline_cli_log.txt</file>
+    <append>true</append>
+
+    <encoder>
+      <!-- TTCCLayout -->
+      <pattern>%date{dd MMM yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+    </encoder>
+
+  </appender>
+
+  <logger name="fr.profi" level="DEBUG" />
+
+  <logger name="fr.proline" level="DEBUG" />
+
+  <root level="WARN">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="Fappender" />
+  </root>
+
+</configuration>

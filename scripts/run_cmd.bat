@@ -1,0 +1,1 @@
+java -Xms2G -Xmx4G -XX:+UseG1GC -XX:+UseStringDeduplication -cp "lib/*;proline-cli-${pom.version}.jar;config" -Dlogback.configurationFile=config/logback.xml fr.proline.cli.ProlineCLI %*
